@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"> </script>
+
+<style>
+    .sample-slider{
+        width:95%;
+    }
+    .sample-slider img{
+        width: 100%;
+    }
+</style>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slider</title>
+<script defer src="Slider.js"></script></head>
+
+<body>
+<div align="center">
+<a href="./index.html">Назад</a><br>
+<div class="swiper sample-slider">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide"><img src="95121b40fd333f9b088e.jpg" alt=""></div>
+    <div class="swiper-slide"><img src="aae191562369f7d192b4.jpg" alt=""></div>
+    <div class="swiper-slide"><img src="40147ab90b4022c7c10d.jpg" alt=""></div>
+  </div>
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+  <div class="swiper-pagination"></div>
+</div>
+</div>
+</body>
+</html>
+
+<script>
+    const swiper = new Swiper('.sample-slider', {
+        loop:true,
+        navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+            el: '.swiper-pagination',
+        },
+    });
+</script>
